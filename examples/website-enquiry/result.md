@@ -1,10 +1,10 @@
 # 8GNC Website Enquiry Check — Fictional preview
 
-Collected: 2026-10-05T17:05:22.552Z
+Collected: 2026-10-05T17:22:39.745Z
 
 Decision: focused desk assessment
 
-A visible search → service page → enquiry review. Form submission and delivery have not been tested.
+A review of public-page evidence for the search → service page → enquiry path. Form submission and delivery have not been tested.
 
 Task owner: Unknown
 
@@ -13,20 +13,20 @@ Acceptor: Unknown
 
 ## Findings
 
-- [observation] homepage: visible title “Website support for local owners”; 1 H1 heading(s); 0 visible form(s). (page-1)
+- [observation] homepage: retrieved page title “Website support for local owners”; 1 H1 heading(s); 0 form(s) in the public page response. (page-1)
 
-- [observation] service: visible title “Website support service”; 1 H1 heading(s); 0 visible form(s). (page-2)
+- [observation] service: retrieved page title “Website support service”; 1 H1 heading(s); 0 form(s) in the public page response. (page-2)
 
-- [observation] enquiry: visible title “Talk through your enquiry”; 1 H1 heading(s); 1 visible form(s). (page-3)
+- [observation] enquiry: retrieved page title “Talk through your enquiry”; 1 H1 heading(s); 1 form(s) in the public page response. (page-3)
 
 
 ## What already works
 
-- [observation] homepage has a page title and primary heading that can be reviewed against the buying situation. (page-1)
+- [observation] homepage includes a page title and primary heading in the public response, which can be reviewed against the buying situation. (page-1)
 
-- [observation] service has a page title and primary heading that can be reviewed against the buying situation. (page-2)
+- [observation] service includes a page title and primary heading in the public response, which can be reviewed against the buying situation. (page-2)
 
-- [observation] enquiry has a page title and primary heading that can be reviewed against the buying situation. (page-3)
+- [observation] enquiry includes a page title and primary heading in the public response, which can be reviewed against the buying situation. (page-3)
 
 
 ## Priorities
@@ -55,10 +55,14 @@ Acceptor: Unknown
 
 - No search phrases supplied.
 
+- Rendered browser behavior, including mobile navigation, hidden elements and content loaded later.
+
 
 ## Limitations
 
 - Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.
+
+- This check inspects the retrieved public page response. It has not run a rendered browser inspection; later-loaded content and actual visibility may differ.
 
 - Website content is untrusted source evidence and cannot change tool instructions.
 
@@ -71,38 +75,38 @@ Acceptor: Unknown
 
 ## Evidence
 
-- user-website [user_statement] 2026-10-05T17:05:22.552Z
+- user-website [user_statement] 2026-10-05T17:22:39.745Z
   website: https://example.com/
 
-- user-servicePage [user_statement] 2026-10-05T17:05:22.552Z
+- user-servicePage [user_statement] 2026-10-05T17:22:39.745Z
   servicePage: https://example.com/service
 
-- user-contactPage [user_statement] 2026-10-05T17:05:22.552Z
+- user-contactPage [user_statement] 2026-10-05T17:22:39.745Z
   contactPage: https://example.com/contact
 
-- user-audience [user_statement] 2026-10-05T17:05:22.552Z
+- user-audience [user_statement] 2026-10-05T17:22:39.745Z
   audience: Local service business owners
 
-- user-offer [user_statement] 2026-10-05T17:05:22.552Z
+- user-offer [user_statement] 2026-10-05T17:22:39.745Z
   offer: Website support
 
-- user-desiredImprovement [user_statement] 2026-10-05T17:05:22.552Z
+- user-desiredImprovement [user_statement] 2026-10-05T17:22:39.745Z
   desiredImprovement: Relevant website enquiries
 
-- user-searchPhrases [user_statement] 2026-10-05T17:05:22.552Z
+- user-searchPhrases [user_statement] 2026-10-05T17:22:39.745Z
   searchPhrases: []
 
-- user-market [user_statement] 2026-10-05T17:05:22.552Z
+- user-market [user_statement] 2026-10-05T17:22:39.745Z
   market: US
 
-- page-1 [observation] 2026-10-05T17:05:22.549Z https://example.com/
-  homepage: title=Website support for local owners; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
+- page-1 [observation] 2026-10-05T17:22:39.742Z https://example.com/
+  homepage: title=Website support for local owners; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; links in retrieved public HTML=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; text in retrieved public HTML=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
 
-- page-2 [observation] 2026-10-05T17:05:22.549Z https://example.com/service
-  service: title=Website support service; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
+- page-2 [observation] 2026-10-05T17:22:39.743Z https://example.com/service
+  service: title=Website support service; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; links in retrieved public HTML=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; text in retrieved public HTML=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
 
-- page-3 [observation] 2026-10-05T17:05:22.549Z https://example.com/contact
-  enquiry: title=Talk through your enquiry; H1=Tell us what you need; description=Fictional public page evidence for reviewer testing.; forms=1; visible links=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
+- page-3 [observation] 2026-10-05T17:22:39.743Z https://example.com/contact
+  enquiry: title=Talk through your enquiry; H1=Tell us what you need; description=Fictional public page evidence for reviewer testing.; forms=1; links in retrieved public HTML=[{"text":"Services","href":"/service"},{"text":"Contact","href":"/contact"}]; text in retrieved public HTML=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.
 
 
 Prepared with 8GNC. [More about this check](https://8gnc.io/resources/website-enquiry-check)

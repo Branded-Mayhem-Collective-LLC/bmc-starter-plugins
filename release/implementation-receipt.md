@@ -12,3 +12,5 @@ Live provider spending is disabled. The tested shared provider ledger reserves $
 Dependency Reviewer package-risk evidence remains UNKNOWN because Endor MCP/CLI risk lookup is unavailable; this is not a finding of unsafe dependencies. npm audit reported zero known advisories. Built-in Node 22 SQLite remains experimental and must be accepted as part of the production runtime choice.
 
 Release sequence and exact attribution destinations are prepared. Direct booking is disabled. Michael's candidate acceptance, approved runtime/secret binding, actual host walkthroughs and store review remain separate gates.
+
+Target-site inspection is currently public HTML retrieval, with rendered/mobile/later-loaded behavior explicitly unknown. The eight browser receipts concern the starter result UI, not rendered audits of client websites.

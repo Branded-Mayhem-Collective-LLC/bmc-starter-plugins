@@ -1,6 +1,6 @@
 # BR8N AI Rescue — Fictional preview
 
-Collected: 2026-10-05T17:05:22.524Z
+Collected: 2026-10-05T17:22:39.721Z
 
 Decision: hold
 
@@ -61,25 +61,25 @@ Acceptor: Unknown
 
 ## Evidence
 
-- user-workflow [user_statement] 2026-10-05T17:05:22.524Z
+- user-workflow [user_statement] 2026-10-05T17:22:39.721Z
   workflow: Draft a follow-up from an approved meeting note
 
-- user-intendedBenefit [user_statement] 2026-10-05T17:05:22.524Z
+- user-intendedBenefit [user_statement] 2026-10-05T17:22:39.721Z
   intendedBenefit: Reduce complete handling time
 
-- user-problems [user_statement] 2026-10-05T17:05:22.524Z
+- user-problems [user_statement] 2026-10-05T17:22:39.721Z
   problems: ["Review and corrections exceed the old task time"]
 
-- user-acceptedResults [user_statement] 2026-10-05T17:05:22.524Z
+- user-acceptedResults [user_statement] 2026-10-05T17:22:39.721Z
   acceptedResults: 0
 
-- user-attempts [user_statement] 2026-10-05T17:05:22.524Z
+- user-attempts [user_statement] 2026-10-05T17:22:39.721Z
   attempts: 2
 
-- user-beforeMinutes [user_statement] 2026-10-05T17:05:22.524Z
+- user-beforeMinutes [user_statement] 2026-10-05T17:22:39.721Z
   beforeMinutes: 45
 
-- user-afterMinutes [user_statement] 2026-10-05T17:05:22.524Z
+- user-afterMinutes [user_statement] 2026-10-05T17:22:39.721Z
   afterMinutes: 50
 
 
