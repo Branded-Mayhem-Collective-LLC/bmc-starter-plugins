@@ -1,0 +1,12 @@
+{
+  "workflow": "Draft a follow-up from an approved meeting note",
+  "intendedBenefit": "Reduce complete handling time",
+  "problems": [
+    "Review and corrections exceed the old task time"
+  ],
+  "sourcePermitted": true,
+  "beforeMinutes": 45,
+  "afterMinutes": 50,
+  "acceptedResults": 0,
+  "attempts": 2
+}

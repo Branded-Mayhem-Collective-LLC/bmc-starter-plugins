@@ -1,0 +1,11 @@
+{
+  "website": "https://example.com/",
+  "servicePage": "https://example.com/service",
+  "contactPage": "https://example.com/contact",
+  "audience": "Local service business owners",
+  "offer": "Website support",
+  "desiredImprovement": "Relevant website enquiries",
+  "searchPhrases": [],
+  "market": "US",
+  "publicInspectionPermitted": true
+}

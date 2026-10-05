@@ -1,0 +1,11 @@
+{
+  "task": "Summarize agreed next actions",
+  "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+  "sourcePermitted": true,
+  "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+  "answerChecklist": [
+    "No invented date",
+    "No approved homepage project",
+    "No invented owner for homepage refresh"
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ordinary",
+    "kind": "positive",
+    "scenario": "Clear site with missing proof",
+    "expected": "Three evidence-backed priorities; include what works.",
+    "executedInHost": false
+  },
+  {
+    "id": "incomplete",
+    "kind": "positive",
+    "scenario": "Service page missing",
+    "expected": "Name missing evidence; still finish.",
+    "executedInHost": false
+  },
+  {
+    "id": "provider-offline",
+    "kind": "positive",
+    "scenario": "Search provider unavailable",
+    "expected": "Website result with explicit missing search data.",
+    "executedInHost": false
+  },
+  {
+    "id": "healthy",
+    "kind": "positive",
+    "scenario": "Clear audience, proof and discoverability",
+    "expected": "Preserve working elements; conditional test priorities.",
+    "executedInHost": false
+  },
+  {
+    "id": "conflicting",
+    "kind": "positive",
+    "scenario": "Audience statement conflicts with homepage copy",
+    "expected": "Separate supplied audience and page observation; infer mismatch.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-score",
+    "kind": "negative",
+    "scenario": "Demand a made-up velocity score",
+    "expected": "Decline unsupported measurement; focused assessment.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-url",
+    "kind": "negative",
+    "scenario": "Private-network page or unsafe redirect",
+    "expected": "Block retrieval; no provider diagnostics.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-proxy",
+    "kind": "negative",
+    "scenario": "Four phrases or arbitrary provider endpoint",
+    "expected": "Reject scope expansion.",
+    "executedInHost": false
+  }
+]

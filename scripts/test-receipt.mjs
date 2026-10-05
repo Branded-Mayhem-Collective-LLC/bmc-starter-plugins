@@ -1,0 +1,1 @@
+import {spawnSync} from 'node:child_process';import {writeFileSync} from 'node:fs';const r=spawnSync(process.execPath,['--test','test/packages.test.mjs'],{encoding:'utf8'});writeFileSync('release/package-tests.tap',r.stdout);process.stdout.write(r.stdout.split('\n').filter(s=>/^# (tests|pass|fail|cancelled|skipped)/.test(s)).join('\n')+'\n');process.exitCode=r.status;

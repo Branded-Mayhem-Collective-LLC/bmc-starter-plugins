@@ -1,0 +1,103 @@
+{
+  "mode": "mock-host protocol browser test; not host acceptance",
+  "cases": [
+    {
+      "host": "OpenAI mock",
+      "id": "ai-rescue",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "OpenAI mock",
+      "id": "workflow-test",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "OpenAI mock",
+      "id": "brand-velocity",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "OpenAI mock",
+      "id": "website-enquiry",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "Claude mock",
+      "id": "ai-rescue",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "Claude mock",
+      "id": "workflow-test",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "Claude mock",
+      "id": "brand-velocity",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    },
+    {
+      "host": "Claude mock",
+      "id": "website-enquiry",
+      "editing": "pass",
+      "clipboard": "pass",
+      "hostMarkdownDownload": "pass",
+      "explicitShare": "pass",
+      "mobile": "pass",
+      "printLayout": "pass",
+      "keyboardEdit": "pass",
+      "realHostInstall": "not_run"
+    }
+  ],
+  "legacyOpenAIAdapter": "pass",
+  "sourceHtmlInjection": "pass"
+}

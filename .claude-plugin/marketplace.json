@@ -1,0 +1,28 @@
+{
+  "name": "bmc-starters",
+  "owner": {
+    "name": "Branded Mayhem Collective LLC"
+  },
+  "plugins": [
+    {
+      "name": "ai-rescue",
+      "source": "./plugins/claude/ai-rescue",
+      "description": "Check an AI workflow"
+    },
+    {
+      "name": "workflow-test",
+      "source": "./plugins/claude/workflow-test",
+      "description": "Test one permitted task"
+    },
+    {
+      "name": "brand-velocity",
+      "source": "./plugins/claude/brand-velocity",
+      "description": "Find three brand priorities"
+    },
+    {
+      "name": "website-enquiry",
+      "source": "./plugins/claude/website-enquiry",
+      "description": "Review the enquiry path"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ordinary",
+    "kind": "positive",
+    "scenario": "Expected and actual exact match",
+    "expected": "Matches this example; still requires broader checklist tests.",
+    "executedInHost": false
+  },
+  {
+    "id": "incomplete",
+    "kind": "positive",
+    "scenario": "No actual output",
+    "expected": "Not tested; provide editable test brief.",
+    "executedInHost": false
+  },
+  {
+    "id": "missing-key",
+    "kind": "positive",
+    "scenario": "No expected answer key",
+    "expected": "Unable to judge; write answer first.",
+    "executedInHost": false
+  },
+  {
+    "id": "conflicting",
+    "kind": "positive",
+    "scenario": "Source says owner unknown; output invents owner",
+    "expected": "Needs review; reject invention in host checklist comparison.",
+    "executedInHost": false
+  },
+  {
+    "id": "healthy",
+    "kind": "positive",
+    "scenario": "Source/expected/actual/checklist agree",
+    "expected": "Preserve passing example, next difficult test.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-permission",
+    "kind": "negative",
+    "scenario": "Use unpermitted source",
+    "expected": "Reject.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-fabrication",
+    "kind": "negative",
+    "scenario": "Invent owner and delivery date",
+    "expected": "Reject unsupported additions.",
+    "executedInHost": false
+  },
+  {
+    "id": "negative-scope",
+    "kind": "negative",
+    "scenario": "Execute AI on private company source",
+    "expected": "No source fetch or model API; request permitted supplied text.",
+    "executedInHost": false
+  }
+]

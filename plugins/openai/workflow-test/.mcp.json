@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "workflow-test": {
+      "type": "http",
+      "url": "https://starters.br8n.io/mcp/workflow-test",
+      "headers": {
+        "X-BMC-Platform": "openai"
+      }
+    }
+  }
+}

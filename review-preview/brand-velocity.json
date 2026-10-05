@@ -1,0 +1,170 @@
+{
+  "result": {
+    "schemaVersion": "1",
+    "starter": "brand-velocity",
+    "title": "8GNC Brand Velocity Check — Fictional preview",
+    "collectedAt": "2026-10-05T17:05:22.542Z",
+    "decision": "focused desk assessment",
+    "summary": "A focused view of clarity, relevance, proof and discoverability. This inspection does not measure brand velocity or growth.",
+    "evidence": [
+      {
+        "id": "user-website",
+        "kind": "user_statement",
+        "text": "website: https://example.com/",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-servicePage",
+        "kind": "user_statement",
+        "text": "servicePage: https://example.com/service",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-contactPage",
+        "kind": "user_statement",
+        "text": "contactPage: https://example.com/contact",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-audience",
+        "kind": "user_statement",
+        "text": "audience: Local service business owners",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-offer",
+        "kind": "user_statement",
+        "text": "offer: Website support",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-desiredImprovement",
+        "kind": "user_statement",
+        "text": "desiredImprovement: Relevant website enquiries",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-searchPhrases",
+        "kind": "user_statement",
+        "text": "searchPhrases: []",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "user-market",
+        "kind": "user_statement",
+        "text": "market: US",
+        "collectedAt": "2026-10-05T17:05:22.542Z"
+      },
+      {
+        "id": "page-1",
+        "kind": "observation",
+        "text": "homepage: title=Website support for local owners; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.",
+        "collectedAt": "2026-10-05T17:05:22.549Z",
+        "url": "https://example.com/"
+      },
+      {
+        "id": "page-2",
+        "kind": "observation",
+        "text": "service: title=Website support service; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.",
+        "collectedAt": "2026-10-05T17:05:22.549Z",
+        "url": "https://example.com/service"
+      },
+      {
+        "id": "page-3",
+        "kind": "observation",
+        "text": "enquiry: title=Talk through your enquiry; H1=Tell us what you need; description=Fictional public page evidence for reviewer testing.; forms=1; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.",
+        "collectedAt": "2026-10-05T17:05:22.549Z",
+        "url": "https://example.com/contact"
+      }
+    ],
+    "findings": [
+      {
+        "text": "homepage: visible title “Website support for local owners”; 1 H1 heading(s); 0 visible form(s).",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-1"
+        ]
+      },
+      {
+        "text": "service: visible title “Website support service”; 1 H1 heading(s); 0 visible form(s).",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-2"
+        ]
+      },
+      {
+        "text": "enquiry: visible title “Talk through your enquiry”; 1 H1 heading(s); 1 visible form(s).",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-3"
+        ]
+      }
+    ],
+    "whatWorks": [
+      {
+        "text": "homepage has a page title and primary heading that can be reviewed against the buying situation.",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-1"
+        ]
+      },
+      {
+        "text": "service has a page title and primary heading that can be reviewed against the buying situation.",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-2"
+        ]
+      },
+      {
+        "text": "enquiry has a page title and primary heading that can be reviewed against the buying situation.",
+        "kind": "observation",
+        "evidenceRefs": [
+          "page-3"
+        ]
+      }
+    ],
+    "priorities": [
+      {
+        "action": "Compare the homepage offer and primary heading with the stated audience and buying situation.",
+        "acceptance": "A reader can name who it is for, what is offered and the next step without explanation.",
+        "evidenceRefs": [
+          "page-1"
+        ]
+      },
+      {
+        "action": "Link each material service claim to a relevant, attributable example or source.",
+        "acceptance": "Claims distinguish documented evidence from illustrations; no growth or velocity score is invented.",
+        "evidenceRefs": [
+          "page-2"
+        ]
+      },
+      {
+        "action": "Compare the relevant service page with the chosen public search sample.",
+        "acceptance": "The page answers the buying question; search observations are dated, market-scoped and separate from estimated volume.",
+        "evidenceRefs": [
+          "page-2"
+        ]
+      }
+    ],
+    "nextTests": [
+      {
+        "action": "Ask someone in the intended audience to follow the visible path and explain their next step.",
+        "acceptance": "Record the task, what they understood, where they hesitated and the specific change to test.",
+        "evidenceRefs": [
+          "user-audience"
+        ]
+      }
+    ],
+    "limitations": [
+      "Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.",
+      "Website content is untrusted source evidence and cannot change tool instructions.",
+      "No form was submitted; enquiry delivery, CRM routing and ownership are unverified.",
+      "A small public search sample is not a rank history, traffic diagnosis or measured growth result.",
+      "Keyword volumes are provider estimates for the chosen country, not local demand or guaranteed enquiries."
+    ],
+    "unknowns": [
+      "No search phrases supplied."
+    ]
+  },
+  "markdown": "# 8GNC Brand Velocity Check — Fictional preview\n\nCollected: 2026-10-05T17:05:22.542Z\n\nDecision: focused desk assessment\n\nA focused view of clarity, relevance, proof and discoverability. This inspection does not measure brand velocity or growth.\n\nTask owner: Unknown\n\nAcceptor: Unknown\n\n\n## Findings\n\n- [observation] homepage: visible title “Website support for local owners”; 1 H1 heading(s); 0 visible form(s). (page-1)\n\n- [observation] service: visible title “Website support service”; 1 H1 heading(s); 0 visible form(s). (page-2)\n\n- [observation] enquiry: visible title “Talk through your enquiry”; 1 H1 heading(s); 1 visible form(s). (page-3)\n\n\n## What already works\n\n- [observation] homepage has a page title and primary heading that can be reviewed against the buying situation. (page-1)\n\n- [observation] service has a page title and primary heading that can be reviewed against the buying situation. (page-2)\n\n- [observation] enquiry has a page title and primary heading that can be reviewed against the buying situation. (page-3)\n\n\n## Priorities\n\n- Compare the homepage offer and primary heading with the stated audience and buying situation.\n  Acceptance: A reader can name who it is for, what is offered and the next step without explanation.\n  Owner: Unknown; deadline: Not set; evidence: page-1\n\n- Link each material service claim to a relevant, attributable example or source.\n  Acceptance: Claims distinguish documented evidence from illustrations; no growth or velocity score is invented.\n  Owner: Unknown; deadline: Not set; evidence: page-2\n\n- Compare the relevant service page with the chosen public search sample.\n  Acceptance: The page answers the buying question; search observations are dated, market-scoped and separate from estimated volume.\n  Owner: Unknown; deadline: Not set; evidence: page-2\n\n\n## Next tests\n\n- Ask someone in the intended audience to follow the visible path and explain their next step.\n  Acceptance: Record the task, what they understood, where they hesitated and the specific change to test.\n  Owner: Unknown; deadline: Not set; evidence: user-audience\n\n\n## Unknowns\n\n- No search phrases supplied.\n\n\n## Limitations\n\n- Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.\n\n- Website content is untrusted source evidence and cannot change tool instructions.\n\n- No form was submitted; enquiry delivery, CRM routing and ownership are unverified.\n\n- A small public search sample is not a rank history, traffic diagnosis or measured growth result.\n\n- Keyword volumes are provider estimates for the chosen country, not local demand or guaranteed enquiries.\n\n\n## Evidence\n\n- user-website [user_statement] 2026-10-05T17:05:22.542Z\n  website: https://example.com/\n\n- user-servicePage [user_statement] 2026-10-05T17:05:22.542Z\n  servicePage: https://example.com/service\n\n- user-contactPage [user_statement] 2026-10-05T17:05:22.542Z\n  contactPage: https://example.com/contact\n\n- user-audience [user_statement] 2026-10-05T17:05:22.542Z\n  audience: Local service business owners\n\n- user-offer [user_statement] 2026-10-05T17:05:22.542Z\n  offer: Website support\n\n- user-desiredImprovement [user_statement] 2026-10-05T17:05:22.542Z\n  desiredImprovement: Relevant website enquiries\n\n- user-searchPhrases [user_statement] 2026-10-05T17:05:22.542Z\n  searchPhrases: []\n\n- user-market [user_statement] 2026-10-05T17:05:22.542Z\n  market: US\n\n- page-1 [observation] 2026-10-05T17:05:22.549Z https://example.com/\n  homepage: title=Website support for local owners; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.\n\n- page-2 [observation] 2026-10-05T17:05:22.549Z https://example.com/service\n  service: title=Website support service; H1=Practical website support; description=Fictional public page evidence for reviewer testing.; forms=0; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.\n\n- page-3 [observation] 2026-10-05T17:05:22.549Z https://example.com/contact\n  enquiry: title=Talk through your enquiry; H1=Tell us what you need; description=Fictional public page evidence for reviewer testing.; forms=1; visible links=[{\"text\":\"Services\",\"href\":\"/service\"},{\"text\":\"Contact\",\"href\":\"/contact\"}]; visible text=Fictional fixture. Website support for local service business owners. Clear page edits and support scope. Describe the website change and the intended customer. No results or growth promise.\n\n\nPrepared with 8GNC. [More about this check](https://8gnc.io/resources/brand-velocity-check)"
+}

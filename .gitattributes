@@ -1,0 +1,3 @@
+# Preserve upstream license text verbatim.
+licenses/** -whitespace
+plugins/**/licenses/** -whitespace
