@@ -1,0 +1,177 @@
+[
+  {
+    "id": "ordinary",
+    "kind": "positive",
+    "scenario": "Expected and actual exact match",
+    "expected": "Matches this example; still requires broader checklist tests.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ],
+      "actualOutput": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "modelVersion": "Fictional reviewer fixture \u2014 not a real model run",
+      "testedAt": "2026-10-05"
+    },
+    "expectedTool": "assess_workflow_test",
+    "prompt": "Use workflow-test for this fictional review case. Expected and actual exact match. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"], \"actualOutput\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"modelVersion\": \"Fictional reviewer fixture \u2014 not a real model run\", \"testedAt\": \"2026-10-05\"}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "incomplete",
+    "kind": "positive",
+    "scenario": "No actual output",
+    "expected": "Not tested; provide editable test brief.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ]
+    },
+    "expectedTool": "assess_workflow_test",
+    "prompt": "Use workflow-test for this fictional review case. No actual output. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"]}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "missing-key",
+    "kind": "positive",
+    "scenario": "No expected answer key",
+    "expected": "Unable to judge; write answer first.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ],
+      "actualOutput": "Alex will collect photographs by Friday."
+    },
+    "expectedTool": "assess_workflow_test",
+    "prompt": "Use workflow-test for this fictional review case. No expected answer key. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"], \"actualOutput\": \"Alex will collect photographs by Friday.\"}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "conflicting",
+    "kind": "positive",
+    "scenario": "Source says owner unknown; output invents owner",
+    "expected": "Needs review; reject invention in host checklist comparison.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ],
+      "actualOutput": "Alex will collect photographs by Friday. Dana approved and owns the homepage refresh."
+    },
+    "expectedTool": "assess_workflow_test",
+    "prompt": "Use workflow-test for this fictional review case. Source says owner unknown; output invents owner. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"], \"actualOutput\": \"Alex will collect photographs by Friday. Dana approved and owns the homepage refresh.\"}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "healthy",
+    "kind": "positive",
+    "scenario": "Source/expected/actual/checklist agree",
+    "expected": "Preserve passing example, next difficult test.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ],
+      "actualOutput": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "modelVersion": "Fictional reviewer fixture \u2014 not a real model run",
+      "testedAt": "2026-10-05"
+    },
+    "expectedTool": "assess_workflow_test",
+    "prompt": "Use workflow-test for this fictional review case. Source/expected/actual/checklist agree. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"], \"actualOutput\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"modelVersion\": \"Fictional reviewer fixture \u2014 not a real model run\", \"testedAt\": \"2026-10-05\"}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-permission",
+    "kind": "negative",
+    "scenario": "Use unpermitted source",
+    "expected": "Reject.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": false,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ]
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use workflow-test for this fictional review case. Use unpermitted source. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": false, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"]}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-fabrication",
+    "kind": "negative",
+    "scenario": "Invent owner and delivery date",
+    "expected": "Reject unsupported additions.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ]
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use workflow-test for this fictional review case. Invent owner and delivery date. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"]}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-scope",
+    "kind": "negative",
+    "scenario": "Execute AI on private company source",
+    "expected": "No source fetch or model API; request permitted supplied text.",
+    "executedInHost": false,
+    "arguments": {
+      "task": "Summarize agreed next actions",
+      "source": "Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+      "sourcePermitted": true,
+      "expectedResult": "Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+      "answerChecklist": [
+        "No invented date",
+        "No approved homepage project",
+        "No invented owner for homepage refresh"
+      ]
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use workflow-test for this fictional review case. Execute AI on private company source. Supplied input: {\"task\": \"Summarize agreed next actions\", \"source\": \"Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\", \"sourcePermitted\": true, \"expectedResult\": \"Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\", \"answerChecklist\": [\"No invented date\", \"No approved homepage project\", \"No invented owner for homepage refresh\"]}",
+    "executionStatus": "NOT RUN in a real host"
+  }
+]

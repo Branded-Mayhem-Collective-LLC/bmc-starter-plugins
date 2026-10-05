@@ -1,0 +1,76 @@
+TAP version 13
+# Subtest: openai/ai-rescue: one skill, scoped MCP, eight reviewer cases
+ok 1 - openai/ai-rescue: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 3.619351
+  type: 'test'
+  ...
+# Subtest: openai/workflow-test: one skill, scoped MCP, eight reviewer cases
+ok 2 - openai/workflow-test: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.626185
+  type: 'test'
+  ...
+# Subtest: openai/brand-velocity: one skill, scoped MCP, eight reviewer cases
+ok 3 - openai/brand-velocity: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.678572
+  type: 'test'
+  ...
+# Subtest: openai/website-enquiry: one skill, scoped MCP, eight reviewer cases
+ok 4 - openai/website-enquiry: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.421951
+  type: 'test'
+  ...
+# Subtest: claude/ai-rescue: one skill, scoped MCP, eight reviewer cases
+ok 5 - claude/ai-rescue: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.344297
+  type: 'test'
+  ...
+# Subtest: claude/workflow-test: one skill, scoped MCP, eight reviewer cases
+ok 6 - claude/workflow-test: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.719169
+  type: 'test'
+  ...
+# Subtest: claude/brand-velocity: one skill, scoped MCP, eight reviewer cases
+ok 7 - claude/brand-velocity: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.469772
+  type: 'test'
+  ...
+# Subtest: claude/website-enquiry: one skill, scoped MCP, eight reviewer cases
+ok 8 - claude/website-enquiry: one skill, scoped MCP, eight reviewer cases
+  ---
+  duration_ms: 0.447388
+  type: 'test'
+  ...
+# Subtest: prepared conversations are distinguished from installation; URLs contain only fixed public prompts
+ok 9 - prepared conversations are distinguished from installation; URLs contain only fixed public prompts
+  ---
+  duration_ms: 3.53355
+  type: 'test'
+  ...
+# Subtest: arrival attribution is public metadata only, constrained to brand resources
+ok 10 - arrival attribution is public metadata only, constrained to brand resources
+  ---
+  duration_ms: 1.203317
+  type: 'test'
+  ...
+# Subtest: UI uses text nodes, no answer persistence or raw-html insertion
+ok 11 - UI uses text nodes, no answer persistence or raw-html insertion
+  ---
+  duration_ms: 0.531347
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 220.022822

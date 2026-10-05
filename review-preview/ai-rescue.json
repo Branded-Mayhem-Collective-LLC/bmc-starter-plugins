@@ -1,0 +1,115 @@
+{
+  "result": {
+    "schemaVersion": "1",
+    "starter": "ai-rescue",
+    "title": "BR8N AI Rescue — Fictional preview",
+    "collectedAt": "2026-10-05T17:22:39.721Z",
+    "decision": "hold",
+    "summary": "Provisional decision: hold. This decision uses your statements; no workflow was executed or independently verified.",
+    "evidence": [
+      {
+        "id": "user-workflow",
+        "kind": "user_statement",
+        "text": "workflow: Draft a follow-up from an approved meeting note",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-intendedBenefit",
+        "kind": "user_statement",
+        "text": "intendedBenefit: Reduce complete handling time",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-problems",
+        "kind": "user_statement",
+        "text": "problems: [\"Review and corrections exceed the old task time\"]",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-acceptedResults",
+        "kind": "user_statement",
+        "text": "acceptedResults: 0",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-attempts",
+        "kind": "user_statement",
+        "text": "attempts: 2",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-beforeMinutes",
+        "kind": "user_statement",
+        "text": "beforeMinutes: 45",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      },
+      {
+        "id": "user-afterMinutes",
+        "kind": "user_statement",
+        "text": "afterMinutes: 50",
+        "collectedAt": "2026-10-05T17:22:39.721Z"
+      }
+    ],
+    "findings": [
+      {
+        "text": "Intended benefit: Reduce complete handling time",
+        "kind": "user_statement",
+        "evidenceRefs": [
+          "user-intendedBenefit"
+        ]
+      },
+      {
+        "text": "Review and corrections exceed the old task time",
+        "kind": "user_statement",
+        "evidenceRefs": [
+          "user-problems"
+        ]
+      },
+      {
+        "text": "Zero accepted results were reported. Cost per accepted result is undefined.",
+        "kind": "inference",
+        "evidenceRefs": [
+          "user-acceptedResults"
+        ]
+      },
+      {
+        "text": "Reported net handling-time change: -5 minutes per task (before minus after). Include preparation, checking, correction, handover and upkeep before treating this as a saving.",
+        "kind": "inference",
+        "evidenceRefs": [
+          "user-beforeMinutes",
+          "user-afterMinutes"
+        ]
+      }
+    ],
+    "whatWorks": [],
+    "priorities": [
+      {
+        "action": "Resolve the provisional decision using one comparable small test.",
+        "acceptance": "A permitted acceptor can explain what passed, failed and remains unknown.",
+        "evidenceRefs": [
+          "user-workflow"
+        ]
+      }
+    ],
+    "nextTests": [
+      {
+        "action": "Trace one ordinary and one difficult permitted example through the complete task.",
+        "acceptance": "Write the expected answer first. Record source/date, permissions, actual output, acceptor decision, corrections and complete person-minutes. Continue only if the agreed checklist passes.",
+        "evidenceRefs": [
+          "user-workflow"
+        ]
+      }
+    ],
+    "limitations": [
+      "Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.",
+      "No implementation, access, safety or savings outcome has been verified.",
+      "The provisional branch is evidence for a next decision, not permission to operate an AI system."
+    ],
+    "unknowns": [
+      "Why no result was accepted and whether any result meets the answer checklist.",
+      "Task owner.",
+      "Person permitted to accept the result."
+    ]
+  },
+  "markdown": "# BR8N AI Rescue — Fictional preview\n\nCollected: 2026-10-05T17:22:39.721Z\n\nDecision: hold\n\nProvisional decision: hold. This decision uses your statements; no workflow was executed or independently verified.\n\nTask owner: Unknown\n\nAcceptor: Unknown\n\n\n## Findings\n\n- [user_statement] Intended benefit: Reduce complete handling time (user-intendedBenefit)\n\n- [user_statement] Review and corrections exceed the old task time (user-problems)\n\n- [inference] Zero accepted results were reported. Cost per accepted result is undefined. (user-acceptedResults)\n\n- [inference] Reported net handling-time change: -5 minutes per task (before minus after). Include preparation, checking, correction, handover and upkeep before treating this as a saving. (user-beforeMinutes, user-afterMinutes)\n\n\n## What already works\n\n- None established.\n\n\n## Priorities\n\n- Resolve the provisional decision using one comparable small test.\n  Acceptance: A permitted acceptor can explain what passed, failed and remains unknown.\n  Owner: Unknown; deadline: Not set; evidence: user-workflow\n\n\n## Next tests\n\n- Trace one ordinary and one difficult permitted example through the complete task.\n  Acceptance: Write the expected answer first. Record source/date, permissions, actual output, acceptor decision, corrections and complete person-minutes. Continue only if the agreed checklist passes.\n  Owner: Unknown; deadline: Not set; evidence: user-workflow\n\n\n## Unknowns\n\n- Why no result was accepted and whether any result meets the answer checklist.\n\n- Task owner.\n\n- Person permitted to accept the result.\n\n\n## Limitations\n\n- Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.\n\n- No implementation, access, safety or savings outcome has been verified.\n\n- The provisional branch is evidence for a next decision, not permission to operate an AI system.\n\n\n## Evidence\n\n- user-workflow [user_statement] 2026-10-05T17:22:39.721Z\n  workflow: Draft a follow-up from an approved meeting note\n\n- user-intendedBenefit [user_statement] 2026-10-05T17:22:39.721Z\n  intendedBenefit: Reduce complete handling time\n\n- user-problems [user_statement] 2026-10-05T17:22:39.721Z\n  problems: [\"Review and corrections exceed the old task time\"]\n\n- user-acceptedResults [user_statement] 2026-10-05T17:22:39.721Z\n  acceptedResults: 0\n\n- user-attempts [user_statement] 2026-10-05T17:22:39.721Z\n  attempts: 2\n\n- user-beforeMinutes [user_statement] 2026-10-05T17:22:39.721Z\n  beforeMinutes: 45\n\n- user-afterMinutes [user_statement] 2026-10-05T17:22:39.721Z\n  afterMinutes: 50\n\n\nPrepared with BR8N. [More about this check](https://br8n.io/resources/ai-rescue)"
+}

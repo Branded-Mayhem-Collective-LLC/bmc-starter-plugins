@@ -1,0 +1,45 @@
+{
+  "name": "brand-velocity",
+  "version": "0.1.0",
+  "description": "Find three brand priorities. Complete free result, explicit unknowns, editable Markdown and next tests.",
+  "author": {
+    "name": "Branded Mayhem Collective LLC",
+    "url": "https://8gnc.io"
+  },
+  "homepage": "https://8gnc.io/resources/brand-velocity-check",
+  "repository": "https://github.com/Branded-Mayhem-Collective-LLC/bmc-starter-plugins",
+  "license": "MIT",
+  "keywords": [
+    "8gnc",
+    "diagnosis",
+    "website"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "8GNC Brand Velocity Check",
+    "shortDescription": "Find three brand priorities",
+    "longDescription": "Find three brand priorities. Complete free result, explicit unknowns, editable Markdown and next tests.",
+    "developerName": "Branded Mayhem Collective LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Interactive"
+    ],
+    "websiteURL": "https://8gnc.io/resources/brand-velocity-check",
+    "privacyPolicyURL": "https://8gnc.io/resources/starters/privacy",
+    "termsOfServiceURL": "https://8gnc.io/resources/starters/terms",
+    "defaultPrompt": [
+      "Use 8GNC Brand Velocity Check to help me complete a focused check.",
+      "Use 8GNC Brand Velocity Check; separate evidence, inference and unknowns.",
+      "Use 8GNC Brand Velocity Check to preserve what works and plan the next test."
+    ],
+    "brandColor": "#FF2E12",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": [
+      "./assets/screenshot-result.png",
+      "./assets/screenshot-mobile.png"
+    ]
+  }
+}

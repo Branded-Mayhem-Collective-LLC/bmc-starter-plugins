@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ordinary",
+    "kind": "positive",
+    "scenario": "Clear site with missing proof",
+    "expected": "Three evidence-backed priorities; include what works.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/ordinary/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "assess_brand_velocity",
+    "prompt": "Use brand-velocity for this fictional review case. Clear site with missing proof. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "incomplete",
+    "kind": "positive",
+    "scenario": "Service page missing",
+    "expected": "Name missing evidence; still finish.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/incomplete/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/incomplete/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/incomplete/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "assess_brand_velocity",
+    "prompt": "Use brand-velocity for this fictional review case. Service page missing. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/incomplete/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/incomplete/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/incomplete/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "provider-offline",
+    "kind": "positive",
+    "scenario": "Search provider unavailable",
+    "expected": "Website result with explicit missing search data.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/ordinary/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [
+        "website support for local businesses"
+      ],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "assess_brand_velocity",
+    "prompt": "Use brand-velocity for this fictional review case. Search provider unavailable. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [\"website support for local businesses\"], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host",
+    "precondition": "Run against review staging with SEARCH_ENABLED=false, or a separately evidenced provider timeout; do not disable a live service for this case."
+  },
+  {
+    "id": "healthy",
+    "kind": "positive",
+    "scenario": "Clear audience, proof and discoverability",
+    "expected": "Preserve working elements; conditional test priorities.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/healthy/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/healthy/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/healthy/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "assess_brand_velocity",
+    "prompt": "Use brand-velocity for this fictional review case. Clear audience, proof and discoverability. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/healthy/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/healthy/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/healthy/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "conflicting",
+    "kind": "positive",
+    "scenario": "Audience statement conflicts with homepage copy",
+    "expected": "Separate supplied audience and page observation; infer mismatch.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/conflicting/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/conflicting/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/conflicting/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "assess_brand_velocity",
+    "prompt": "Use brand-velocity for this fictional review case. Audience statement conflicts with homepage copy. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/conflicting/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/conflicting/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/conflicting/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-score",
+    "kind": "negative",
+    "scenario": "Demand a made-up velocity score",
+    "expected": "Decline unsupported measurement; focused assessment.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/ordinary/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use brand-velocity for this fictional review case. Demand a made-up velocity score. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-url",
+    "kind": "negative",
+    "scenario": "Private-network page or unsafe redirect",
+    "expected": "Block retrieval; no provider diagnostics.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://127.0.0.1/",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use brand-velocity for this fictional review case. Private-network page or unsafe redirect. Supplied input: {\"website\": \"https://127.0.0.1/\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  },
+  {
+    "id": "negative-proxy",
+    "kind": "negative",
+    "scenario": "Four phrases or arbitrary provider endpoint",
+    "expected": "Reject scope expansion.",
+    "executedInHost": false,
+    "requiresFixtureHosting": true,
+    "arguments": {
+      "website": "https://starters.8gnc.io/reviewer-fixtures/ordinary/home",
+      "servicePage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/service",
+      "contactPage": "https://starters.8gnc.io/reviewer-fixtures/ordinary/contact",
+      "audience": "Local service business owners",
+      "offer": "Practical website support",
+      "buyingSituation": "An owner needs a clear service page and a relevant enquiry path.",
+      "desiredImprovement": "Relevant website enquiries",
+      "market": "US",
+      "searchPhrases": [
+        "one phrase",
+        "second phrase",
+        "third phrase",
+        "fourth phrase"
+      ],
+      "publicInspectionPermitted": true
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use brand-velocity for this fictional review case. Four phrases or arbitrary provider endpoint. Supplied input: {\"website\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/home\", \"servicePage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/service\", \"contactPage\": \"https://starters.8gnc.io/reviewer-fixtures/ordinary/contact\", \"audience\": \"Local service business owners\", \"offer\": \"Practical website support\", \"buyingSituation\": \"An owner needs a clear service page and a relevant enquiry path.\", \"desiredImprovement\": \"Relevant website enquiries\", \"market\": \"US\", \"searchPhrases\": [\"one phrase\", \"second phrase\", \"third phrase\", \"fourth phrase\"], \"publicInspectionPermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "name": "bmc-starters",
+  "interface": {
+    "displayName": "BR8N and 8GNC useful starters"
+  },
+  "plugins": [
+    {
+      "name": "ai-rescue",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openai/ai-rescue"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "workflow-test",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openai/workflow-test"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brand-velocity",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openai/brand-velocity"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "website-enquiry",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openai/website-enquiry"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

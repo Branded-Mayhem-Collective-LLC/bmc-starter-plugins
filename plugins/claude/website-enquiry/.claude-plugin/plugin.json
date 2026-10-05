@@ -1,0 +1,17 @@
+{
+  "name": "website-enquiry",
+  "version": "0.1.0",
+  "description": "Review the enquiry path. Complete free result, explicit unknowns, editable Markdown and next tests.",
+  "author": {
+    "name": "Branded Mayhem Collective LLC",
+    "url": "https://8gnc.io"
+  },
+  "homepage": "https://8gnc.io/resources/website-enquiry-check",
+  "repository": "https://github.com/Branded-Mayhem-Collective-LLC/bmc-starter-plugins",
+  "license": "MIT",
+  "keywords": [
+    "8gnc",
+    "diagnosis",
+    "website"
+  ]
+}

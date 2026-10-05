@@ -1,0 +1,17 @@
+{
+  "name": "workflow-test",
+  "version": "0.1.0",
+  "description": "Test one permitted task. Complete free result, explicit unknowns, editable Markdown and next tests.",
+  "author": {
+    "name": "Branded Mayhem Collective LLC",
+    "url": "https://br8n.io"
+  },
+  "homepage": "https://br8n.io/resources/workflow-test",
+  "repository": "https://github.com/Branded-Mayhem-Collective-LLC/bmc-starter-plugins",
+  "license": "MIT",
+  "keywords": [
+    "br8n",
+    "diagnosis",
+    "workflow"
+  ]
+}

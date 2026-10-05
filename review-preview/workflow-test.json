@@ -1,0 +1,88 @@
+{
+  "result": {
+    "schemaVersion": "1",
+    "starter": "workflow-test",
+    "title": "BR8N Workflow Test — Fictional preview",
+    "collectedAt": "2026-10-05T17:22:39.733Z",
+    "decision": "not tested",
+    "summary": "An editable test brief for one permitted example. Exact text comparison is only one finding; meaning and acceptance need the answer checklist.",
+    "evidence": [
+      {
+        "id": "user-task",
+        "kind": "user_statement",
+        "text": "task: Summarize agreed next actions",
+        "collectedAt": "2026-10-05T17:22:39.733Z"
+      },
+      {
+        "id": "user-source",
+        "kind": "user_statement",
+        "text": "source: Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.",
+        "collectedAt": "2026-10-05T17:22:39.733Z"
+      },
+      {
+        "id": "user-expectedResult",
+        "kind": "user_statement",
+        "text": "expectedResult: Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.",
+        "collectedAt": "2026-10-05T17:22:39.733Z"
+      },
+      {
+        "id": "user-answerChecklist",
+        "kind": "user_statement",
+        "text": "answerChecklist: [\"No invented date\",\"No approved homepage project\",\"No invented owner for homepage refresh\"]",
+        "collectedAt": "2026-10-05T17:22:39.733Z"
+      }
+    ],
+    "findings": [
+      {
+        "text": "Task: Summarize agreed next actions",
+        "kind": "user_statement",
+        "evidenceRefs": [
+          "user-task"
+        ]
+      },
+      {
+        "text": "Source supplied by you; permission is your statement, not independently verified.",
+        "kind": "user_statement",
+        "evidenceRefs": [
+          "user-source"
+        ]
+      }
+    ],
+    "whatWorks": [
+      {
+        "text": "A supplied checklist provides an explicit starting point for acceptance.",
+        "kind": "user_statement",
+        "evidenceRefs": [
+          "user-answerChecklist"
+        ]
+      }
+    ],
+    "priorities": [
+      {
+        "action": "Agree the expected result and answer checklist.",
+        "acceptance": "The permitted acceptor can distinguish a pass from a plausible but unsupported answer.",
+        "evidenceRefs": [
+          "user-task"
+        ]
+      }
+    ],
+    "nextTests": [
+      {
+        "action": "Review this example, then test an incomplete source and a conflicting source.",
+        "acceptance": "Mark each checklist item matches / needs revision / unable to judge with a supporting source quotation. Reject invented owners, deadlines, approvals, savings or outcomes.",
+        "evidenceRefs": [
+          "user-task"
+        ]
+      }
+    ],
+    "limitations": [
+      "Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.",
+      "No model or operational workflow was executed by this check.",
+      "A match on one example does not establish reliability or safety."
+    ],
+    "unknowns": [
+      "Actual output and model/version/date; the test has not been run."
+    ]
+  },
+  "markdown": "# BR8N Workflow Test — Fictional preview\n\nCollected: 2026-10-05T17:22:39.733Z\n\nDecision: not tested\n\nAn editable test brief for one permitted example. Exact text comparison is only one finding; meaning and acceptance need the answer checklist.\n\nTask owner: Unknown\n\nAcceptor: Unknown\n\n\n## Findings\n\n- [user_statement] Task: Summarize agreed next actions (user-task)\n\n- [user_statement] Source supplied by you; permission is your statement, not independently verified. (user-source)\n\n\n## What already works\n\n- [user_statement] A supplied checklist provides an explicit starting point for acceptance. (user-answerChecklist)\n\n\n## Priorities\n\n- Agree the expected result and answer checklist.\n  Acceptance: The permitted acceptor can distinguish a pass from a plausible but unsupported answer.\n  Owner: Unknown; deadline: Not set; evidence: user-task\n\n\n## Next tests\n\n- Review this example, then test an incomplete source and a conflicting source.\n  Acceptance: Mark each checklist item matches / needs revision / unable to judge with a supporting source quotation. Reject invented owners, deadlines, approvals, savings or outcomes.\n  Owner: Unknown; deadline: Not set; evidence: user-task\n\n\n## Unknowns\n\n- Actual output and model/version/date; the test has not been run.\n\n\n## Limitations\n\n- Fictional reviewer fixture. This is not a client case, live website audit or verified business outcome.\n\n- No model or operational workflow was executed by this check.\n\n- A match on one example does not establish reliability or safety.\n\n\n## Evidence\n\n- user-task [user_statement] 2026-10-05T17:22:39.733Z\n  task: Summarize agreed next actions\n\n- user-source [user_statement] 2026-10-05T17:22:39.733Z\n  source: Alex will collect photographs. No date was agreed. The homepage refresh was discussed but not approved or assigned.\n\n- user-expectedResult [user_statement] 2026-10-05T17:22:39.733Z\n  expectedResult: Alex: collect photographs; date unknown. Homepage refresh: discussed, unapproved and unassigned.\n\n- user-answerChecklist [user_statement] 2026-10-05T17:22:39.733Z\n  answerChecklist: [\"No invented date\",\"No approved homepage project\",\"No invented owner for homepage refresh\"]\n\n\nPrepared with BR8N. [More about this check](https://br8n.io/resources/workflow-test)"
+}

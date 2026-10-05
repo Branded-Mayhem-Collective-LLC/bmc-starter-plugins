@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ai-rescue": {
+      "type": "http",
+      "url": "https://starters.br8n.io/mcp/ai-rescue",
+      "headers": {
+        "X-BMC-Platform": "openai"
+      }
+    }
+  }
+}

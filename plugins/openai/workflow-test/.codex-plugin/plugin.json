@@ -1,0 +1,45 @@
+{
+  "name": "workflow-test",
+  "version": "0.1.0",
+  "description": "Test one permitted task. Complete free result, explicit unknowns, editable Markdown and next tests.",
+  "author": {
+    "name": "Branded Mayhem Collective LLC",
+    "url": "https://br8n.io"
+  },
+  "homepage": "https://br8n.io/resources/workflow-test",
+  "repository": "https://github.com/Branded-Mayhem-Collective-LLC/bmc-starter-plugins",
+  "license": "MIT",
+  "keywords": [
+    "br8n",
+    "diagnosis",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BR8N Workflow Test",
+    "shortDescription": "Test one permitted task",
+    "longDescription": "Test one permitted task. Complete free result, explicit unknowns, editable Markdown and next tests.",
+    "developerName": "Branded Mayhem Collective LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Interactive"
+    ],
+    "websiteURL": "https://br8n.io/resources/workflow-test",
+    "privacyPolicyURL": "https://br8n.io/resources/starters/privacy",
+    "termsOfServiceURL": "https://br8n.io/resources/starters/terms",
+    "defaultPrompt": [
+      "Use BR8N Workflow Test to help me complete a focused check.",
+      "Use BR8N Workflow Test; separate evidence, inference and unknowns.",
+      "Use BR8N Workflow Test to preserve what works and plan the next test."
+    ],
+    "brandColor": "#FF7A1A",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": [
+      "./assets/screenshot-result.png",
+      "./assets/screenshot-mobile.png"
+    ]
+  }
+}

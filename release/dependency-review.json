@@ -1,0 +1,57 @@
+{
+  "task_profile": "package-risk",
+  "risk_posture": "UNKNOWN",
+  "data_gaps": [
+    "Endor MCP package-risk lookup not exposed in this session",
+    "endorctl is unavailable on the remote execution plane"
+  ],
+  "packages": [
+    {
+      "ecosystem": "npm",
+      "name": "@modelcontextprotocol/sdk",
+      "version": "1.32.1",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@modelcontextprotocol/ext-apps",
+      "version": "2.0.3",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "zod",
+      "version": "4.6.5",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "cheerio",
+      "version": "1.1.2",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "esbuild",
+      "version": "0.28.2",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "playwright-core",
+      "version": "1.63.0",
+      "source": "current remote package.json and lockfile",
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "independent_checks": {
+    "npm_audit": "0 known vulnerabilities reported during installation; not an Endor risk verdict",
+    "versions": "pinned",
+    "namespace": "not selected or queried"
+  }
+}
