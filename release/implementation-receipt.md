@@ -14,3 +14,5 @@ Dependency Reviewer package-risk evidence remains UNKNOWN because Endor MCP/CLI 
 Release sequence and exact attribution destinations are prepared. Direct booking is disabled. Michael's candidate acceptance, approved runtime/secret binding, actual host walkthroughs and store review remain separate gates.
 
 Target-site inspection is currently public HTML retrieval, with rendered/mobile/later-loaded behavior explicitly unknown. The eight browser receipts concern the starter result UI, not rendered audits of client websites.
+
+An optional anonymous useful-completion signal is implemented on the existing scoped renderer. UUID retry deduplication and daily counts are technical metadata only; no source/answers/result/contact record is persisted. Unit/protocol and mock-browser tests cover the signal; real host consent/behavior remains to be verified.

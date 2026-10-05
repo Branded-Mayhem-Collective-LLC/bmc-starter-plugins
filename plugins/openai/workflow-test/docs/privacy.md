@@ -8,3 +8,5 @@ Provider credentials stay server-side under Doppler. Production proxy and servic
 Support candidate: hello@brandedmayhem.com. Release owner must verify the receiving route and publish this accepted policy before submission. This draft is accurate for candidate source; production retention and host behavior require separate verification.
 
 Public-data caches are additionally bounded to 2,500 entries and 32 MiB of serialized text; single entries above 512 KiB are discarded and older public entries may be evicted before their TTL. No new expiry scheduler is installed.
+
+Optional useful-completion feedback: choosing “This helped” sends a random identifier and a true usefulness signal through the selected starter's renderer. The service records only daily starter/platform counts for 90 days. Recent random identifiers are retained up to 24 hours, capped at 10,000, to avoid duplicate counting; older identifiers may be evicted sooner. No answers, source text, result text, IP, account, email or contact detail is included. This voluntary signal does not gate the free result. It is not a unique-person, enquiry or sales measurement.

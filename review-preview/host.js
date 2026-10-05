@@ -25690,7 +25690,7 @@ container holding the app. Specify either width or maxWidth, and either height o
   async function boot() {
     const frame = document.getElementById("view");
     let bridge;
-    window.previewReceipts = { downloads: [], contexts: [], ready: false };
+    window.previewReceipts = { downloads: [], contexts: [], feedback: [], ready: false };
     const params = new URLSearchParams(location.search);
     const host = params.get("host") ?? "OpenAI mock";
     const id = params.get("starter") ?? "ai-rescue";
@@ -25699,7 +25699,11 @@ container holding the app. Specify either width or maxWidth, and either height o
     const payload = await (await fetch(id + ".json")).json();
     document.getElementById("starter").addEventListener("change", (e) => location.search = "?starter=" + e.target.value + "&host=" + encodeURIComponent(host));
     document.getElementById("host").addEventListener("change", (e) => location.search = "?starter=" + id + "&host=" + encodeURIComponent(e.target.value));
-    bridge = new MF(null, { name: host, version: "fixture-v1" }, { downloadFile: {}, updateModelContext: {}, logging: {} }, { hostContext: { theme: "light", displayMode: "inline" } });
+    bridge = new MF(null, { name: host, version: "fixture-v1" }, { downloadFile: {}, updateModelContext: {}, serverTools: {}, logging: {} }, { hostContext: { theme: "light", displayMode: "inline" } });
+    bridge.oncalltool = async (request) => {
+      window.previewReceipts.feedback.push(request);
+      return { content: [{ type: "text", text: "Mock anonymous signal" }], structuredContent: { acknowledged: true, recorded: true } };
+    };
     bridge.ondownloadfile = async (params2) => {
       window.previewReceipts.downloads.push(params2);
       return {};

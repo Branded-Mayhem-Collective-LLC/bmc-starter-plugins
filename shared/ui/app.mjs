@@ -1,7 +1,8 @@
 import {App} from '@modelcontextprotocol/ext-apps';
 const el=id=>document.getElementById(id);
 const app=new App({name:'BMC Starter Result',version:'0.1.0'},{},{autoResize:true});
-let connected=false, original='',result=null, dirty=false,pending=null;
+let connected=false, original='',result=null, dirty=false,pending=null,feedbackSent=false;
+const feedbackId=crypto.randomUUID();
 const status=text=>{el('status').textContent=text;};
 function row(parent,heading,text){const section=document.createElement('section');section.className='result-row';if(heading){const h=document.createElement('h2');h.textContent=heading;section.append(h);}const p=document.createElement('p');p.textContent=text;section.append(p);parent.append(section);return section;}
 function overview(r){const container=el('assessment');container.replaceChildren();if(!r)return;
@@ -16,7 +17,7 @@ function show(payload){
  if(dirty){pending=payload;el('replace').hidden=false;status('A new result is available. Export your edits before using the new result.');return;}
  result=d.result;document.documentElement.dataset.brand=['ai-rescue','workflow-test'].includes(result?.starter)?'br8n':'8gnc';original=d.markdown;el('title').textContent=result?.title??'Your check result';el('decision').textContent=result?.decision??'';el('summary').textContent=result?.summary??'';el('editor').value=original;el('print-text').textContent=original;
  el('evidence').textContent=(result?.evidence??[]).map(e=>`${e.id} · ${e.kind} · ${e.collectedAt}${e.url?' · '+e.url:''}`).join('\n');
- overview(result);status('Complete result ready. Edits stay in this view until you copy or export.');
+ el('useful').disabled=!['ai-rescue','workflow-test','brand-velocity','website-enquiry'].includes(result?.starter)||feedbackSent;overview(result);status('Complete result ready. Edits stay in this view until you copy or export.');
 }
 app.ontoolresult=show;
 app.onhostcontextchanged=ctx=>{if(ctx.theme)document.documentElement.dataset.theme=ctx.theme;};
@@ -24,6 +25,7 @@ app.onhostcontextchanged=ctx=>{if(ctx.theme)document.documentElement.dataset.the
 window.addEventListener('openai:set_globals',e=>show(e.detail?.globals?.toolOutput));
 window.addEventListener('starter:fixture',e=>show(e.detail)); // private preview supplies fictional fixtures
 el('editor').addEventListener('input',()=>{dirty=true;el('print-text').textContent=el('editor').value;status('Edited by you. These changes are unverified. The overview shows the original check; exports use your edited text.');});
+el('useful').addEventListener('click',async()=>{if(!connected||!result?.starter){status('Feedback is unavailable in this standalone preview. Your complete result remains editable.');return;}try{const response=await app.callServerTool({name:'render_'+result.starter.replaceAll('-','_')+'_result',arguments:{feedback:{id:feedbackId,useful:true}}});if(response.isError)throw Error('feedback_unavailable');feedbackSent=true;el('useful').disabled=true;status('Thank you. Only an anonymous useful-completion signal was recorded; no answers or contact details were sent.');}catch{status('Feedback was not recorded. Your complete result remains available.');}});
 el('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(el('editor').value);status('Copied Markdown.');}catch{el('editor').focus();el('editor').select();status('Select all text and copy with your keyboard.');}});
 el('download').addEventListener('click',async()=>{
  const text=el('editor').value,filename=(result?.starter??'starter')+'-result.md';

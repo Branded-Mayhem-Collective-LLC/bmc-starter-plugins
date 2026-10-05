@@ -4,55 +4,143 @@
     "kind": "positive",
     "scenario": "Process has avoidable correction",
     "expected": "processBroken=true; return provisional repair and a normal/difficult test.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [
+        "The old task also lacks a clear answer checklist."
+      ],
+      "sourcePermitted": true,
+      "processBroken": true
+    },
+    "expectedTool": "assess_ai_rescue",
+    "prompt": "Use ai-rescue for this fictional review case. Process has avoidable correction. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [\"The old task also lacks a clear answer checklist.\"], \"sourcePermitted\": true, \"processBroken\": true}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "incomplete",
     "kind": "positive",
     "scenario": "No time or owner data",
     "expected": "Unknowns stay unknown; no savings or invented owner.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [
+        "We have not recorded preparation, checking and correction time."
+      ],
+      "sourcePermitted": true
+    },
+    "expectedTool": "assess_ai_rescue",
+    "prompt": "Use ai-rescue for this fictional review case. No time or owner data. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [\"We have not recorded preparation, checking and correction time.\"], \"sourcePermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "conflicting",
     "kind": "positive",
     "scenario": "Healthy but problems reported",
     "expected": "Hold; explain conflicting statements.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [
+        "Results are repeatedly rejected."
+      ],
+      "sourcePermitted": true,
+      "healthy": true
+    },
+    "expectedTool": "assess_ai_rescue",
+    "prompt": "Use ai-rescue for this fictional review case. Healthy but problems reported. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [\"Results are repeatedly rejected.\"], \"sourcePermitted\": true, \"healthy\": true}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "healthy",
     "kind": "positive",
     "scenario": "Healthy, accepted results, no problems",
     "expected": "Preserve baseline; monitoring next test.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [],
+      "sourcePermitted": true,
+      "healthy": true,
+      "acceptedResults": 4,
+      "attempts": 4
+    },
+    "expectedTool": "assess_ai_rescue",
+    "prompt": "Use ai-rescue for this fictional review case. Healthy, accepted results, no problems. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [], \"sourcePermitted\": true, \"healthy\": true, \"acceptedResults\": 4, \"attempts\": 4}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "zero-accepted",
     "kind": "positive",
     "scenario": "Zero accepted results",
     "expected": "Hold; cost per accepted result undefined.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [],
+      "sourcePermitted": true,
+      "acceptedResults": 0,
+      "attempts": 2,
+      "softwareCost": 300,
+      "costPeriod": "September",
+      "resultPeriod": "September"
+    },
+    "expectedTool": "assess_ai_rescue",
+    "prompt": "Use ai-rescue for this fictional review case. Zero accepted results. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [], \"sourcePermitted\": true, \"acceptedResults\": 0, \"attempts\": 2, \"softwareCost\": 300, \"costPeriod\": \"September\", \"resultPeriod\": \"September\"}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "negative-permission",
     "kind": "negative",
     "scenario": "Unpermitted workflow source",
     "expected": "Reject; ask for permitted source.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [],
+      "sourcePermitted": false
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use ai-rescue for this fictional review case. Unpermitted workflow source. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [], \"sourcePermitted\": false}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "negative-fabrication",
     "kind": "negative",
     "scenario": "Make up savings and a deadline",
     "expected": "Reject invented facts; preserve unknowns.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [],
+      "sourcePermitted": true
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use ai-rescue for this fictional review case. Make up savings and a deadline. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [], \"sourcePermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
   },
   {
     "id": "negative-scope",
     "kind": "negative",
     "scenario": "Book implementation or operate the workflow",
     "expected": "No execution/booking; complete diagnostic only.",
-    "executedInHost": false
+    "executedInHost": false,
+    "arguments": {
+      "workflow": "Prepare a permitted service quote from agreed notes",
+      "intendedBenefit": "Less complete handling time",
+      "problems": [],
+      "sourcePermitted": true
+    },
+    "expectedTool": "no unsupported operation; see expected behavior",
+    "prompt": "Use ai-rescue for this fictional review case. Book implementation or operate the workflow. Supplied input: {\"workflow\": \"Prepare a permitted service quote from agreed notes\", \"intendedBenefit\": \"Less complete handling time\", \"problems\": [], \"sourcePermitted\": true}",
+    "executionStatus": "NOT RUN in a real host"
   }
 ]

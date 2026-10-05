@@ -8,3 +8,7 @@
 7. Confirm no claims of deployed workflow, measured growth, form delivery or invented outcomes. Capture host/version/date, screenshots and export files separately. Prepared source, local protocol success, installed host success and directory release are different receipts.
 
 Exact attributed informational link: “More about this check” → https://br8n.io/resources/ai-rescue?utm_source=claude&utm_medium=starter&utm_campaign=bmc-starters&utm_content=ai-rescue. The fixed public platform header selects attribution; no user answer enters this URL.
+
+Optional feedback acceptance: choose “This helped” only after receiving a useful result. Confirm that the renderer receives only a random UUID and useful=true, not input/source/result text. A repeated UUID must not increment the recent count twice. Check the voluntary feedback privacy disclosure; the complete result must remain available when feedback is skipped or fails.
+
+Review cases now include literal tool arguments and user prompts. Website cases use the separately labeled hosted reviewer fixtures. Their URLs remain proposed until staging is bound; do not submit unreachable fixtures or mark a case executed from the static JSON. The backend can serve the allowlisted fixture paths after the approved runtime is started.
